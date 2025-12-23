@@ -9,17 +9,7 @@ import spectre from './package/src';
 import node from '@astrojs/node';
 import { spectreDark } from './src/ec-theme';
 
-const {
-  GISCUS_REPO,
-  GISCUS_REPO_ID,
-  GISCUS_CATEGORY,
-  GISCUS_CATEGORY_ID,
-  GISCUS_MAPPING,
-  GISCUS_STRICT,
-  GISCUS_REACTIONS_ENABLED,
-  GISCUS_EMIT_METADATA,
-  GISCUS_LANG
-} = loadEnv(process.env.NODE_ENV!, process.cwd(), "");
+
 
 // https://astro.build/config
 const config = defineConfig({
@@ -47,15 +37,15 @@ const config = defineConfig({
         }
       },
       giscus: {
-        repository: GISCUS_REPO,
-        repositoryId: GISCUS_REPO_ID,
-        category: GISCUS_CATEGORY,
-        categoryId: GISCUS_CATEGORY_ID,
-        mapping: GISCUS_MAPPING as any,
-        strict: GISCUS_STRICT === "true",
-        reactionsEnabled: GISCUS_REACTIONS_ENABLED === "true",
-        emitMetadata: GISCUS_EMIT_METADATA === "true",
-        lang: GISCUS_LANG,
+        repository: "longle0125/longle0125.github.io",
+        repositoryId: "R_kgDOQrvBjw",
+        category: "Announcements",
+        categoryId: "DIC_kwDOQrvBj84C0I4h",
+        mapping: "pathname",
+        strict: false,
+        reactionsEnabled: true,
+        emitMetadata: false,
+        lang: "en",
       }
     })
   ],
