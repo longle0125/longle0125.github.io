@@ -5,7 +5,7 @@
       "type": "lucide",
       "name": "cake"
     },
-    "text": "1 year old"
+    "text": "19 years old"
   },
   {
     "id": 2,
@@ -13,7 +13,21 @@
       "type": "lucide",
       "name": "earth"
     },
-    "type": "lucide",
-    "text": "Made in Germany"
+    "text": "Vietnamese"
+  },
+
+  {
+    "id": 3,
+    "icon":{
+      "type": "lucide",
+      "name": "graduation-cap"
+    },
+    "text": "Student at HCMUT"
+  },
+
+  {
+    "id": 4,
+    "icon": { "type": "lucide", "name": "flag" }, 
+    "text": "Member of BKISC"
   }
 ]

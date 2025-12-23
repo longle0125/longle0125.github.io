@@ -2,10 +2,29 @@
   {
     "id": 1,
     "icon": {
-      "type": "lucide",
+      "type": "lucide", 
       "name": "github"
     },
     "text": "GitHub",
-    "link": "https://github.com/louisescher/spectre"
+    "link": "https://github.com/longle0125"
+  },
+  {
+    "id": 2,
+    "icon": {
+      "type": "lucide", 
+      "name": "facebook"
+    },
+    "text": "Facebook",
+    "link": "https://www.facebook.com/long.le.516857"
+  },
+  
+  {
+    "id": 3,
+    "icon": {
+      "type": "lucide",
+      "name": "send"
+    },
+    "text": "Telegram",
+    "link": "https://t.me/LEh0an9L0N9"
   }
 ]

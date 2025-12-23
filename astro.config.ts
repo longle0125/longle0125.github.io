@@ -32,18 +32,18 @@ const config = defineConfig({
     mdx(),
     sitemap(),
     spectre({
-      name: 'Spectre',
+      name: 'Vinjr',
       openGraph: {
         home: {
-          title: 'Spectre',
-          description: 'A minimalistic theme for Astro.'
+          title: "Who's Vinjr?",
+          description: 'My personal space for sharing my knowledge, thoughts, and interests.'
         },
         blog: {
           title: 'Blog',
-          description: 'News and guides for Spectre.'
+          description: 'An archive for cryptography, mathematics problems'
         },
         projects: {
-          title: 'Projects'
+          title: 'Showing my personal projects'
         }
       },
       giscus: {
