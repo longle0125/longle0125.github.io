@@ -1,42 +1,16 @@
-![Spectre, a terminal-inspired theme for Astro.](./images/README.png)
+# 🛡️ Vinjr's Personal Blog
 
-Spectre is a terminal-inspired theme for Astro, built using TypeScript and Astro.
+Hi! I'm **Lê Hoàng Long** (also known as **Vinjr**), a second-year Computer Science student at **Ho Chi Minh City University of Technology (HCMUT)**. I am an active member of **BKISC**, where I dedicate my time to mastering **Cryptography** and **Mathematics**.
 
-## Getting Started
+This blog is my personal space to document my learning journey and share CTF write-ups.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/louisescher/spectre/tree/master)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/louisescher/spectre/tree/master)
+---
 
-Alternatively, you can create a new Astro project with Spectre like this:
+### 🚀 [Visit my Blog: longle0125.github.io](https://longle0125.github.io)
 
-```bash
-# npm
-npm create astro@latest -- --template louisescher/spectre
+---
 
-# pnpm
-pnpm create astro@latest --template louisescher/spectre
+## 🛠️ Built With
 
-# yarn
-yarn create astro --template louisescher/spectre
-```
-
-## Features
-
-- 100 / 100 Lighthouse performance
-- Responsive for all screen sizes
-- Fully accessible
-- Type-Safe
-- Auto-generated sitemap
-- Markdown / MDX Support
-- Builds on content collections
-- Search powered by [pagefind](https://pagefind.app)
-- Comments powered by [giscus](https://giscus.app) (can be turned off)
-- More!
-
-## Curious?
-
-Head over to [the preview page](https://spectre.lou.gg) to find out more!
-
-### Spectre Integration
-
-If you want to know more about how the custom integration that is used in the `astro.config.ts` file works, head over to the [integration's own README](https://github.com/louisescher/spectre/tree/master/package)!
+- **Engine:** [Astro](https://astro.build/) - The web framework for content-driven websites.
+- **Theme:** [Spectre](https://github.com/louisescher/spectre) by [Louise Scher](https://lou.gg).
