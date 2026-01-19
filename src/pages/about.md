@@ -3,13 +3,11 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+Hi! I'm **Lê Hoàng Long**, currently a Computer Science student at **Ho Chi Minh City University of Technology ([HCMUT](https://www.hcmut.edu.vn/))**.
 
-![Astro Paper](public/astropaper-og.jpg)
+I am a member of **[BKISC](https://bkisc.com/)**, I hope to get better at cryptography soon 🙏🏼.
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
-
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+This blog is my personal space to document my learning journey, share CTF write-ups, and connect with like-minded enthusiasts in the cybersecurity field.
 
 ## Features
 

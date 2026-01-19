@@ -17,29 +17,29 @@ interface Social {
 }
 
 export const SOCIALS: Social[] = [
-  {
+ {
     name: "GitHub",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/longle0125",
     linkTitle: `${SITE.title} on GitHub`,
     icon: IconGitHub,
   },
   {
-    name: "X",
-    href: "https://x.com/username",
-    linkTitle: `${SITE.title} on X`,
-    icon: IconBrandX,
+    name: "Facebook",
+    href: "https://www.facebook.com/long.le.516857",
+    linkTitle: `${SITE.title} on Facebook`,
+    icon: IconFacebook,
   },
   {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/username/",
-    linkTitle: `${SITE.title} on LinkedIn`,
-    icon: IconLinkedin,
+    name: "Telegram",
+    href: "https://t.me/LEh0an9L0N9",
+    linkTitle: `${SITE.title} on Telegram`,
+    icon: IconTelegram,
   },
-  {
+  { 
     name: "Mail",
-    href: "mailto:yourmail@gmail.com",
+    href: "mailto:lelong010620@gmail.com",
     linkTitle: `Send an email to ${SITE.title}`,
-    icon: IconMail,
+    icon: IconMail
   },
 ] as const;
 

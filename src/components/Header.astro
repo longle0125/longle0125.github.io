@@ -6,6 +6,7 @@ import IconArchive from "@/assets/icons/IconArchive.svg";
 import IconSunHigh from "@/assets/icons/IconSunHigh.svg";
 import IconMenuDeep from "@/assets/icons/IconMenuDeep.svg";
 import LinkButton from "./LinkButton.astro";
+import DinosaurLogo from "@/assets/dinosaur-svgrepo-com.svg";
 import { SITE } from "@/config";
 
 const { pathname } = Astro.url;
@@ -46,6 +47,7 @@ const isActive = (path: string) => {
       href="/"
       class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none"
     >
+      <!-- <DinosaurLogo class="w-35 h-35 dark:invert" /> -->
       {SITE.title}
     </a>
     <nav
