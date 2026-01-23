@@ -456,7 +456,7 @@ def inv_subBytes_tranfrom(value):
 #### ShiftRows
 Shift element to the left corresponse to the current rows, the 0 rows shift left circular 0 time, the 1 row shift left circular 1 time and so on. This adds diffusion to the encryption by moving value across the state.
 
-```
+```python
 def shiftRows(M):
     cpy_M = M.copy()
     for k in range(0,4):
@@ -465,7 +465,7 @@ def shiftRows(M):
     return M
 ```
 The inverse is just shift to the right.
-```
+```python
 def inv_shiftRows(M):
     cpy_M = M.copy()
     for k in range(0,4):
