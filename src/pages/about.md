@@ -9,7 +9,7 @@ I am a member of **[BKISC](https://bkisc.com/)**, I hope to get better at crypto
 
 This blog is my personal space to document my learning journey, share CTF write-ups, and connect with like-minded enthusiasts in the cybersecurity field.
 
-## Features
+<!-- ## Features
 
 AstroPaper comes with a set of useful features that make content publishing easy and effective:
 
@@ -32,4 +32,4 @@ Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue
 
 If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
 
-Kyay zuu! 🙏🏼
+Kyay zuu! 🙏🏼 -->

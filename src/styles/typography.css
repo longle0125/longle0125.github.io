@@ -91,11 +91,15 @@
     }
   }
 
-
-  /* Katex text color */
-  .prose .katex-display {
+    /* Katex text color */
+    .prose, .katex-display {
     @apply text-foreground;
-  }
+    }
+
+  
+
+    /* .katex * { color: inherit; } */
+
 
   /* ===== Code Blocks & Syntax Highlighting ===== */
   .astro-code {
@@ -105,6 +109,8 @@
   html[data-theme="dark"] .astro-code {
     @apply bg-(--shiki-dark-bg) text-(--shiki-dark) [&_span]:text-(--shiki-dark);
   }
+
+
 
   /* Styles for Shiki transformers */
   /* https://shiki.style/packages/transformers */
