@@ -584,12 +584,14 @@ def inv_mixColumn(M):
 
 **Alternatively, we can define mix column** as a polynomial in $GF(2^8)$
 $$
-a(x)=\{03\}x^3 + \{01\}x^2 + \{01\}x+ \{02\} 
+a(x)=\{03\}x^3 + \{01\}x^2 + \{01\}x+ \{02\} \pmod{x^4 + 1}
 $$
 
-Multiplication is performed as in ordinary polynomial multiplication with two refinements:
-    - a. Coefficients are multiplied in GF(28).
-    - b. The resulting polynomial is reduced mod (x4 + 1).
+- Multiplication is performed as in ordinary polynomial multiplication with two refinements:
+    1. Coefficients are multiplied in $GF(2^8)$.
+    2. The resulting polynomial is reduced mod $(x^4 + 1)$.
+- For the sets defined in this section, we are defining a polynomial ring in which each element of this ring is a polynomial of degree 3 or less with coefficients in $GF(2^8)$, and multiplication is carried out modulo a polynomial of degree 4. 
+- Note that $x^4 + 1$ is reducible so the chosen of coefficent ensure that exsit a inverse of $a(x)$.
 #### Add Round Key
 This is pretty straight forward, you must xoring corresponse element in the matrix with the round key which is another matrix. Each round key is getting in key expension step. 
 By xor properties, the inverse function is the same, you just need to perform them with reverse order in decryption step.
