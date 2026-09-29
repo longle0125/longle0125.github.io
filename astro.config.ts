@@ -1,4 +1,5 @@
 import { defineConfig, envField, fontProviders } from "astro/config";
+import { unified } from "@astrojs/markdown-remark";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 import remarkToc from "remark-toc";
@@ -22,13 +23,14 @@ export default defineConfig({
     filter: page => SITE.showArchives || !page.endsWith("/archives"),
   }), react()],
   markdown: {
-    remarkPlugins: 
-    [
-      remarkMath,
-      remarkToc, 
-      [remarkCollapse, { test: "Table of contents" }],
-    ],
-    rehypePlugins: [rehypeKatex],
+    processor: unified({
+      remarkPlugins: [
+        remarkMath,
+        remarkToc,
+        [remarkCollapse, { test: "Table of contents" }],
+      ],
+      rehypePlugins: [rehypeKatex],
+    }),
     shikiConfig: {
       // For more themes, visit https://shiki.style/themes
       themes: { light: "min-light", dark: "night-owl" },
@@ -65,17 +67,14 @@ export default defineConfig({
       }),
     },
   },
-  experimental: {
-    preserveScriptOrder: true,
-    fonts: [
-      {
-        name: "Google Sans Code",
-        cssVariable: "--font-google-sans-code",
-        provider: fontProviders.google(),
-        fallbacks: ["monospace"],
-        weights: [300, 400, 500, 600, 700],
-        styles: ["normal", "italic"],
-      },
-    ],
-  },
+  fonts: [
+    {
+      name: "Google Sans Code",
+      cssVariable: "--font-google-sans-code",
+      provider: fontProviders.google(),
+      fallbacks: ["sans-serif"],
+      weights: [300, 400, 500, 600, 700],
+      styles: ["normal", "italic"],
+    },
+  ],
 });

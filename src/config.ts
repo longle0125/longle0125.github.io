@@ -4,7 +4,7 @@ export const SITE = {
   //profile: "https://satnaing.dev/",
   desc: "A blog to achive and share my learning journey",
   title: "vinjr blog",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "vinjr-og.png",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 4,

@@ -1,4 +1,3 @@
-
 ---
 author: vinjr
 pubDatetime: 2026-07-31T14:51:19+07:00
