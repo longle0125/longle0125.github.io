@@ -17,7 +17,7 @@ description: "Write-ups for  interesting challenges in NSS CTF"
 Some week ago, we participate in NSS CTF, the crypto category consist of various challenge which difficulty range from easy to hard, but overall I think those are fun and worth for writeup. 
 
 ## Crypto/Light Weight Encryption
-The [challenge file](../../../public/downloads/nns-ctf-2026/light_weight_encryption.py)
+The [challenge file](/downloads/nns-ctf-2026/light_weight_encryption.py)
 
 ```python
 from secrets import randbelow
@@ -54,7 +54,7 @@ ct = encrypt(pk, bytes_to_long(flag))
 print(f"pk = ({pk[0].list()}, {pk[1]})")
 print(f"ct = {ct}")
 ```
-and the [output file](../../../public/downloads/nns-ctf-2026/output.py)
+and the [output file](/downloads/nns-ctf-2026/output.py)
 
 
 We examine the challenge, 
@@ -100,7 +100,7 @@ ct_1 = A_{i_1} + A_{i_2} + ... + A_{i_{130}}
 ct_2 = B_{i_1} + B_{i_2} + ... + B_{i_{130}}
 $$
 
-If you have seen LWE, the first things you notice will be there is a scaler $k$ to the error. Now we see that that the error is in range of $2^32$ while $q$ is around $2^{768}$. So that mean if we recover $k$ then it is an easy [BDD problem](Bounded%20distance%20decoding.md). So how can we get $k$.
+If you have seen LWE, the first things you notice will be there is a scaler $k$ to the error. Now we see that that the error is in range of $2^32$ while $q$ is around $2^{768}$. So that mean if we recover $k$ then it is an easy [BDD problem](/posts/bounded-distance-decoding/). So how can we get $k$.
 
 In this case there is an useful trick, we multiply the (1) equation by the left kernel of $A$ to vanish $s$, 
 
