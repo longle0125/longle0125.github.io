@@ -1,3 +1,4 @@
+import { release } from "node:os";
 import { defineConfig, envField, fontProviders } from "astro/config";
 import { unified } from "@astrojs/markdown-remark";
 import tailwindcss from "@tailwindcss/vite";
@@ -15,6 +16,12 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
 import react from "@astrojs/react";
+
+// Windows drive mounts under WSL can miss file-change notifications.
+const usePolling =
+  process.platform === "linux" &&
+  /microsoft/i.test(release()) &&
+  /^\/mnt\/[a-z]\//i.test(process.cwd());
 
 // https://astro.build/config
 export default defineConfig({
@@ -45,6 +52,9 @@ export default defineConfig({
     },
   },
   vite: {
+    server: {
+      watch: usePolling ? { usePolling: true, interval: 1000 } : undefined,
+    },
     // eslint-disable-next-line
     // @ts-ignore
     // This will be fixed in Astro 6 with Vite 7 support
